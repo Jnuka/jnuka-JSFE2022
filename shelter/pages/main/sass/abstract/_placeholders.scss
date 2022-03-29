@@ -1,0 +1,15 @@
+@font-face {
+  font-family:'Georgia-ex';
+  src: url('../../../assets/fonts/georgia/georgia-regular.woff') format('woff2'),
+	url('../../../assets/fonts/georgia/georgia-regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family:'Arial-ex';
+  src: url('../../../assets/fonts/arial/arial-regular.woff') format('woff2'),
+	url('../../../assets/fonts/arial/arial-regular.woff2') format('woff');
+}
+
+%transition {
+  transition: all .3s ease-out;
+}

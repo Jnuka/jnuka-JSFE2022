@@ -1,0 +1,24 @@
+.header {
+  background: url(../../../assets/icons/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  
+}
+
+.logo {
+  @include font($size: 3.2rem, $height: 3.52rem);
+  padding-bottom: 10px;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+}
+
+.logo-subtitle {
+  @include font($size: 1.5rem, $height: 1.495rem);
+  letter-spacing: 0.1em;
+  color: $color-light;
+}

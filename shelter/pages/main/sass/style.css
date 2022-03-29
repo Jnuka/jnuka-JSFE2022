@@ -1,0 +1,294 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: 'Georgia-ex';
+  src: url("../../../assets/fonts/georgia/georgia-regular.woff") format("woff2"), url("../../../assets/fonts/georgia/georgia-regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: 'Arial-ex';
+  src: url("../../../assets/fonts/arial/arial-regular.woff") format("woff2"), url("../../../assets/fonts/arial/arial-regular.woff2") format("woff");
+}
+
+.navigation__link {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Georgia-ex';
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 5.72rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 4.55rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Arial-ex';
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  background: url(../../../assets/icons/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.logo {
+  font-size: 3.2rem;
+  line-height: 3.52rem;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 10px;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.logo-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.495rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.not-only {
+  background: url(../../../assets/icons/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.not-only__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.not-only__title {
+  color: #FFFFFF;
+  max-width: 310px;
+  margin-bottom: 42px;
+}
+
+.not-only__text {
+  color: #CDCDCD;
+  margin-bottom: 42px;
+}
+
+.not-only__button {
+  padding: 15px 45px;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  text-decoration: none;
+  color: #292929;
+}
+
+.not-only__button:hover, .not-only__button:active {
+  background-color: #FDDCC4;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Arial-ex';
+}
+
+.navigation__item {
+  list-style: none;
+  cursor: pointer;
+  padding: 0 35px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #CDCDCD;
+}
+
+.navigation__link:hover {
+  color: #FAFAFA;
+}
+
+.navigation__item-activ {
+  position: relative;
+}
+
+.navigation__item-activ .navigation__link {
+  color: #FAFAFA;
+}
+
+.navigation__item-activ::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 34px;
+  top: 25px;
+  width: 114px;
+  height: 3px;
+  background-color: #F1CDB3;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.about__content {
+  margin-left: 120px;
+  max-width: 430px;
+}
+
+.about__title {
+  margin-bottom: 25px;
+  max-width: 310px;
+}
+
+.about__text-top {
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=style.css.map */

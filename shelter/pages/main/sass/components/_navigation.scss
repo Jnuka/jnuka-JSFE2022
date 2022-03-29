@@ -1,0 +1,38 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Arial-ex';
+}
+
+.navigation__item {
+  list-style: none;
+  cursor: pointer;
+  padding: 0 35px;  
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: $color-gray;
+  @extend %transition;
+  &:hover {
+    color: $color-hovered;
+  }
+}
+
+.navigation__item-activ {
+  .navigation__link {
+    color: $color-hovered;
+  } 
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 34px;
+    top: 25px;
+    width: 114px;
+    height: 3px;
+    background-color: $color-primary;
+  }
+}
