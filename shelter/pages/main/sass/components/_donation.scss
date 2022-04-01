@@ -1,0 +1,65 @@
+.donation {
+  background-color: $color-gray-bg;
+}
+
+.donation__content {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.donation__img {
+  height: 100%;
+  padding-right: 30px;
+}
+
+.donation__info {
+  max-width: 380px;
+}
+
+.donation__title {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.donation__name-bank {
+  margin-bottom: 20px;
+}
+
+.donation__button {  
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  padding-right: 14px;
+  background-color: $color-primary;
+  border: none;
+  border-radius: 9px;
+  letter-spacing: 0.09em;
+  color: $color-title;
+  @extend %transition;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 23px;
+    top: 11px;
+    left: 16px;
+    background-image: url(./../../../assets/icons/credit-card.svg);
+  }
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
+.donation__button-title {
+  padding-left: 60px;
+}
+
+.donation__legal-info {
+  @include font($size: 1.2rem, $height: 1.8rem, $style: italic);
+  color: $color-description;
+}

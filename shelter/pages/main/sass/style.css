@@ -103,7 +103,7 @@ input, select {
   src: url("../../../assets/fonts/arial/arial-regular.woff") format("woff2"), url("../../../assets/fonts/arial/arial-regular.woff2") format("woff");
 }
 
-.navigation__link, .our__arrow, .card, .card__button, .help__card {
+.navigation__link, .our__arrow, .card, .card__button, .help__card, .donation__button {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -137,6 +137,7 @@ h3 {
   line-height: 4.55rem;
   font-weight: 400;
   font-style: normal;
+  color: #545454;
 }
 
 h4 {
@@ -146,8 +147,19 @@ h4 {
   font-style: normal;
 }
 
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p {
   font-family: 'Arial-ex';
+}
+
+button {
+  font-family: 'Georgia-ex';
 }
 
 .wrapper {
@@ -455,6 +467,7 @@ p {
 
 .help__title {
   text-align: center;
+  max-width: 335px;
   margin-top: 80px;
   margin-bottom: 60px;
 }
@@ -499,5 +512,81 @@ p {
 
 .help__card-img {
   margin-bottom: 30px;
+}
+
+.donation {
+  background-color: #F6F6F6;
+}
+
+.donation__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.donation__img {
+  height: 100%;
+  padding-right: 30px;
+}
+
+.donation__info {
+  max-width: 380px;
+}
+
+.donation__title {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.donation__name-bank {
+  margin-bottom: 20px;
+}
+
+.donation__button {
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  padding-right: 14px;
+  background-color: #F1CDB3;
+  border: none;
+  border-radius: 9px;
+  letter-spacing: 0.09em;
+  color: #545454;
+  cursor: pointer;
+  position: relative;
+}
+
+.donation__button::after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 23px;
+  top: 11px;
+  left: 16px;
+  background-image: url(./../../../assets/icons/credit-card.svg);
+}
+
+.donation__button:hover {
+  background-color: #FDDCC4;
+}
+
+.donation__button-title {
+  padding-left: 60px;
+}
+
+.donation__legal-info {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #B2B2B2;
 }
 /*# sourceMappingURL=style.css.map */

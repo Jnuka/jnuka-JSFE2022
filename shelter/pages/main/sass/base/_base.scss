@@ -17,13 +17,21 @@ h2 {
 
 h3 {  
   @include font($size: 3.5rem, $height: 4.55rem);
+  color: $color-title;
 }
 
 h4 {  
   @include font($size: 2.0rem, $height: 2.3rem);
 }
 
+h5 {  
+  @include font($size: 1.5rem, $height: 1.65rem);
+}
 
 p {
   font-family: 'Arial-ex';
+}
+
+button {
+  font-family: 'Georgia-ex';
 }
