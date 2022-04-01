@@ -103,7 +103,7 @@ input, select {
   src: url("../../../assets/fonts/arial/arial-regular.woff") format("woff2"), url("../../../assets/fonts/arial/arial-regular.woff2") format("woff");
 }
 
-.navigation__link, .our__arrow, .card, .card__button {
+.navigation__link, .our__arrow, .card, .card__button, .help__card {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -392,6 +392,8 @@ p {
 
 .card:hover {
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .card__img {
@@ -436,5 +438,66 @@ p {
 
 .our__button:hover {
   background-color: #FDDCC4;
+}
+
+.help__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.help__title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.help__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 38px 110px;
+  padding: 0 80px;
+  margin-bottom: 100px;
+}
+
+.help__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.help__card:hover {
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.help__card-img {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
