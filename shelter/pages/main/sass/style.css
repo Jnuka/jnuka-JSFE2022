@@ -123,6 +123,7 @@ body {
   line-height: 2.4rem;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.06em;
 }
 
 h2 {
@@ -201,6 +202,123 @@ button {
   font-style: normal;
   letter-spacing: 0.1em;
   color: #FFFFFF;
+}
+
+.footer {
+  background: url(../../../assets/icons/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.footer__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 278px 302px 300px;
+      grid-template-columns: 278px 302px 300px;
+  gap: 160px;
+  padding-top: 40px;
+}
+
+.footer__question {
+  margin-top: 17px;
+  margin-bottom: 60px;
+}
+
+.footer__title {
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  max-width: 270px;
+}
+
+.footer__question-title {
+  margin-bottom: 43px;
+}
+
+.footer__subtitle {
+  color: #F1CDB3;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #F1CDB3;
+}
+
+.footer__email {
+  position: relative;
+  margin-bottom: 49px;
+}
+
+.footer__email::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 26px;
+  top: -2px;
+  left: -1px;
+  background-image: url(./../../../assets/icons/mail.svg);
+}
+
+.footer__email-link {
+  padding-left: 60px;
+}
+
+.footer__phone {
+  position: relative;
+}
+
+.footer__phone::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 32px;
+  top: -5px;
+  left: -1px;
+  background-image: url(./../../../assets/icons/phone.svg);
+}
+
+.footer__phone-link {
+  padding-left: 60px;
+}
+
+.footer__visit {
+  margin-top: 17px;
+  margin-bottom: 60px;
+}
+
+.footer__boston {
+  margin-bottom: 37px;
+}
+
+.footer__boston-link {
+  position: relative;
+  padding-left: 42px;
+}
+
+.footer__boston-link::after {
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 32px;
+  top: 6px;
+  left: -1px;
+  background-image: url(./../../../assets/icons/pin.svg);
+}
+
+.footer__london-link {
+  position: relative;
+  padding-left: 42px;
+}
+
+.footer__london-link::after {
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 32px;
+  top: -5px;
+  left: -1px;
+  background-image: url(./../../../assets/icons/pin.svg);
+}
+
+.footer__dog {
+  padding-top: 7px;
 }
 
 .not-only {
@@ -485,7 +603,6 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 38px 110px;
-  padding: 0 80px;
   margin-bottom: 100px;
 }
 
