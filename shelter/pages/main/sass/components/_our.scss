@@ -1,0 +1,102 @@
+.our {
+  background-color: $color-gray-bg;
+}
+
+.our__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.our__title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.our__slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.our__arrow {
+  width: 52px;
+  height: 52px;  
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    border: 2px solid $color-primary-light;
+    background-color: $color-primary-light;
+  }
+}
+
+.our__arrow-prev {
+  margin-right: 53px;
+}
+
+.our__arrow-next {
+  margin-left: 53px;
+  transform:  rotate(0.5turn);
+}
+
+.our__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 9px;
+  background-color: $color-hovered;
+  @extend %transition;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-light;
+  }
+}
+
+.card__img {
+  margin-bottom: 30px;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.card__title {
+  letter-spacing: 0.06em;
+  line-height: 2.272rem;
+  margin-bottom: 30px;
+}
+
+.card__button {
+  letter-spacing: 0.06em;
+  @include font($size: 1.7rem, $height: 2.21rem);
+  margin-bottom: 30px;
+  background-color: transparent;
+  padding: 15px 45px;
+  border: 2px solid $color-primary;  
+  border-radius: 100px;
+  @extend %transition;
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+
+.our__button {
+  @include font($size: 1.7rem, $height: 2.21rem);
+  margin-bottom: 100px;
+  cursor: pointer;
+  padding: 15px 45px;
+  background-color: $color-primary; 
+  border-radius: 100px;
+  &:hover {
+    background-color: $color-primary-light; 
+  }
+}
