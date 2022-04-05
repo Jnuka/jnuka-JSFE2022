@@ -20,7 +20,9 @@ body {
 .header {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
   a,
-  a::before {
+  a::before,
+  h1,
+  p {
     cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
   }
 }
@@ -49,7 +51,8 @@ body {
 
 .donation {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
-  .donation__button {
+  .donation__button,
+  .donation__button-link {
     cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
   }
 }

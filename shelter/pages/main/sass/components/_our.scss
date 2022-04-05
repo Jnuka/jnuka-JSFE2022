@@ -82,6 +82,7 @@
   letter-spacing: 0.06em;
   line-height: 2.272rem;
   margin-bottom: 30px;
+  color: $color-title;
 }
 
 .card__button {
@@ -92,6 +93,7 @@
   padding: 13px 43px;
   border: 2px solid $color-primary;  
   border-radius: 100px;
+  color: $color-text-button;
   @extend %transition;
   &:hover {
     background-color: $color-primary;

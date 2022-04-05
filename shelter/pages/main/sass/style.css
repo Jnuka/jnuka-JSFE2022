@@ -137,7 +137,9 @@ body a {
 }
 
 .header a,
-.header a::before {
+.header a::before,
+.header h1,
+.header p {
   cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
 }
 
@@ -167,7 +169,8 @@ body a {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
 }
 
-.donation .donation__button {
+.donation .donation__button,
+.donation .donation__button-link {
   cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
 }
 
@@ -675,6 +678,7 @@ button {
   letter-spacing: 0.06em;
   line-height: 2.272rem;
   margin-bottom: 30px;
+  color: #545454;
 }
 
 .card__button {
@@ -688,6 +692,7 @@ button {
   padding: 13px 43px;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
+  color: #292929;
 }
 
 .card__button:hover {
@@ -762,6 +767,7 @@ button {
           align-items: center;
   border-radius: 10px;
   padding: 10px;
+  color: #545454;
   cursor: pointer;
 }
 
@@ -810,6 +816,7 @@ button {
 
 .donation__name-bank {
   margin-bottom: 19px;
+  color: #545454;
 }
 
 .donation__button {

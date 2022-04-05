@@ -15,9 +15,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;  
-  // gap: 54px 120px;
-  // margin-bottom: 100px;
-  // max-width: 1033px;
   gap: 35px 100px;
   margin-bottom: 88px;
   max-width: 1054px;
@@ -29,6 +26,7 @@
   align-items: center;
   border-radius: 10px;
   padding: 10px;
+  color: $color-title;
   @extend %transition;
   cursor: pointer;
   &:hover {
