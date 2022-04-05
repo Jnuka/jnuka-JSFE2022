@@ -7,37 +7,37 @@
   justify-items: center;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 82px;
+  padding-bottom: 101px;
 }
 
 .donation__img {
   height: 100%;
-  padding-right: 30px;
+  margin-right: 28px; 
 }
 
 .donation__info {
   max-width: 380px;
+  padding-left: 1px;
 }
 
 .donation__title {
-  max-width: 280px;
+  max-width: 306px;
   margin-bottom: 20px;
 }
 
 .donation__name-bank {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .donation__button {  
   margin-bottom: 20px;
   padding: 10px 0px;
-  padding-right: 14px;
   background-color: $color-primary;
   border: none;
   border-radius: 9px;
-  letter-spacing: 0.09em;
   color: $color-title;
+  max-width: 349px;
   @extend %transition;
   cursor: pointer;
   position: relative;
@@ -46,8 +46,8 @@
     content: '';
     width: 30px;
     height: 23px;
-    top: 11px;
-    left: 16px;
+    top: 10px;
+    left: 15px;
     background-image: url(./../../../assets/icons/credit-card.svg);
   }
   &:hover {
@@ -55,11 +55,14 @@
   }
 }
 
-.donation__button-title {
+.donation__button-link {
   padding-left: 60px;
+  text-decoration: none;
+  color: $color-title;
 }
 
 .donation__legal-info {
   @include font($size: 1.2rem, $height: 1.8rem, $style: italic);
   color: $color-description;
+  letter-spacing: 0;
 }

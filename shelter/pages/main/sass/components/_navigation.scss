@@ -7,9 +7,12 @@
 
 .navigation__item {
   list-style: none;
-  cursor: pointer;
-  padding: 0 35px;  
+  padding-right: 35px;
+  &:last-child {
+    padding-right: 0;
+  }
 }
+
 
 .navigation__link {
   text-decoration: none;
@@ -29,8 +32,8 @@
     content: '';
     position: absolute;
     display: block;
-    left: 34px;
-    top: 25px;
+    left: 1px;
+    top: 24px;
     width: 114px;
     height: 3px;
     background-color: $color-primary;

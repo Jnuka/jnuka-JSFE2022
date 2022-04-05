@@ -3,37 +3,104 @@
 }
 
 html {
-  font-size: 10px;    
+  font-size: 10px;   
+  scroll-behavior: smooth; 
 }
 
 body {
   font-family: 'Georgia-ex';
   @include font($size: 1.5rem, $height: 2.4rem);
-  
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06px;  
+  cursor: url(../../../assets/icons/pointer/pointer.png), url(../../../assets/icons/pointer/pointer.cur), default;
+  a {
+    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover.cur), default;
+  }
+}
+
+.header {
+  cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
+  a,
+  a::before {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+  }
+}
+
+.not-only {
+  cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
+  a {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+  }
+}
+
+.our {
+  cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
+  a,
+  button,
+  .card {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+  }
+}
+
+.help {
+  .help__card {
+    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover.cur), default;
+  }  
+}
+
+.donation {
+  cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
+  .donation__button {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+  }
+}
+
+footer {
+  cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
+  a,
+  .footer__boston {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+  }
 }
 
 h2 {  
   @include font($size: 4.4rem, $height: 5.72rem);
 }
 
-h3 {  
-  @include font($size: 3.5rem, $height: 4.55rem);
+h3 {    
+  letter-spacing: 0.06em;
+  @include font($size: 3.5rem, $height: 4.5rem);
   color: $color-title;
 }
 
 h4 {  
+  letter-spacing: 0.06em;
   @include font($size: 2.0rem, $height: 2.3rem);
 }
 
 h5 {  
+  letter-spacing: 0.06em;
   @include font($size: 1.5rem, $height: 1.65rem);
 }
 
 p {
   font-family: 'Arial-ex';
+  color: $color-text;
 }
 
 button {
   font-family: 'Georgia-ex';
+}
+
+.header,
+.not-only,
+.footer {
+  @include color-selection($color: $color-selection-dark);
+  
+}
+
+.about, 
+.help,
+.our,
+.donation {
+  @include color-selection($color: $color-selection-light);
 }

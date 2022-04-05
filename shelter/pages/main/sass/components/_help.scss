@@ -6,9 +6,8 @@
 
 .help__title {  
   text-align: center;
-  max-width: 335px;
-  margin-top: 80px;
-  margin-bottom: 60px;
+  max-width: 315px;
+  margin: 81px 0 49px 3px;
 }
 
 .help__content {
@@ -16,8 +15,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;  
-  gap: 38px 110px;
-  margin-bottom: 100px;
+  // gap: 54px 120px;
+  // margin-bottom: 100px;
+  // max-width: 1033px;
+  gap: 35px 100px;
+  margin-bottom: 88px;
+  max-width: 1054px;
 }
 
 .help__card {
@@ -34,5 +37,5 @@
 }
 
 .help__card-img {
-  margin-bottom: 30px;  
+  margin-bottom: 31px;  
 }
