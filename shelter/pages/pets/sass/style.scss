@@ -1,3 +1,22 @@
-body {
-  background-color: coral;
-}
+// Normalize
+@import "./../../main/sass/base/normalize";
+
+
+//Abstract
+@import "./../../main/sass/abstract/constants";
+@import "./../../main/sass/abstract/mixins";
+@import "./../../main/sass/abstract/placeholders";
+
+// Base
+@import "base/base";
+
+//Layout
+@import "./../../main/sass/layout/wrapper";
+@import "layout/header";
+@import "./../../main/sass/layout/footer";
+
+
+//Components
+@import "components/our";
+@import "components/navigation";
+
