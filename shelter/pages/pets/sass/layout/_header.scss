@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $color-light;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;  
+  padding-bottom: 29px;
+}
+
+.logo {
+  @include font($size: 3.2rem, $height: 3.52rem);
+  padding-bottom: 10px;
+  letter-spacing: 0.06em;  
+  margin-top: 6px;
+  color: $color-title;  
+  @extend %transition;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-subtitle {
+  @include font($size: 1.3rem, $height: 1.495rem);
+  letter-spacing: 0.1em;  
+  padding-left: 4px;
+  color: $color-text-button;
+  @extend %transition;
+}
+

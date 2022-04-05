@@ -1,0 +1,38 @@
+.not-only {
+  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
+  padding-top: 4px;
+}
+
+.not-only__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.not-only__content {
+  margin-top: 164px;
+}
+
+.not-only__title {
+  color: $color-light;
+  max-width: 330px;
+  margin-bottom: 40px;
+}
+
+.not-only__text {
+  color: $color-gray;
+  margin-bottom: 57px;
+  max-width: 465px;
+}
+
+.not-only__button {
+  padding: 18px 44px 17px 46px;
+  background-color: $color-primary;
+  border-radius: 100px;
+  letter-spacing: 1.99px;
+  text-decoration: none;
+  color: $color-text-button;
+  &:hover,
+  &:active {
+    background-color: $color-primary-light;
+  }
+}

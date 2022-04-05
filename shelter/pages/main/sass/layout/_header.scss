@@ -1,0 +1,40 @@
+.header {
+  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 0;
+  
+}
+
+.header__logo {
+  cursor: pointer;
+  &:hover {
+    .logo {
+      color: $color-primary-light;  
+    }
+    .logo-subtitle {
+      color: $color-gray;
+    }
+  }
+}
+
+.logo {
+  @include font($size: 3.2rem, $height: 3.52rem);
+  padding-bottom: 10px;
+  letter-spacing: 0.06em;
+  color: $color-primary;  
+  margin-top: 6px;
+  @extend %transition;
+}
+
+.logo-subtitle {
+  @include font($size: 1.3rem, $height: 1.495rem);
+  letter-spacing: 0.1em;
+  color: $color-light;
+  padding-left: 4px;
+  @extend %transition;
+}
