@@ -47,11 +47,16 @@
       background-color: $color-primary;      
     }
   }  
+  &:nth-child(6) {
+    .card__img {
+      border-radius: 9px 9px 0px 0px;
+    }    
+  }
 }
 
 .card__img {
   margin-bottom: 30px;
-  border-radius: 9px 9px 0px 0px;
+  border-radius: 5px 5px 0px 0px;  
 }
 
 .card__title {
