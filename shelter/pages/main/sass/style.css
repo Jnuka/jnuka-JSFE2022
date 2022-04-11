@@ -132,6 +132,11 @@ body a {
   cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover.cur), default;
 }
 
+.background {
+  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, -webkit-gradient(linear, left top, right top, from(#5B483A), to(#262425));
+  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
+}
+
 .header {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
 }
@@ -251,13 +256,9 @@ button {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
-}
-
-.header {
-  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, -webkit-gradient(linear, left top, right top, from(#5B483A), to(#262425));
-  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
+  padding: 0 40px;
 }
 
 .header__wrapper {
@@ -270,7 +271,8 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 55px 0;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .header__logo {
@@ -311,13 +313,29 @@ button {
   background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .footer__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 279px 301px 300px;
-      grid-template-columns: 279px 301px 300px;
+  -ms-grid-columns: 740px 300px;
+      grid-template-columns: 740px 300px;
   gap: 160px;
   padding-top: 40px;
+}
+
+.footer__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 279px 302px;
+      grid-template-columns: 279px 302px;
+  gap: 160px;
 }
 
 .footer__question {
@@ -438,13 +456,7 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
-.footer__dog {
-  padding-top: 7px;
-}
-
 .not-only {
-  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, -webkit-gradient(linear, left top, right top, from(#5B483A), to(#262425));
-  background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
   padding-top: 4px;
 }
 
@@ -795,13 +807,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 82px;
-  padding-bottom: 101px;
+  padding-top: 81px;
+  padding-bottom: 100px;
 }
 
 .donation__img {
   height: 100%;
-  margin-right: 28px;
+  margin-right: 29px;
 }
 
 .donation__info {

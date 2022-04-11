@@ -2,11 +2,22 @@
   background: url(../../../assets/icons/noise_transparent@2x.png) repeat, linear-gradient(left, #5B483A 0%, #262425 100%);
 }
 
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer__content {
   display: grid;
-  grid-template-columns: 279px 301px 300px;
+  grid-template-columns: 740px 300px;
   gap: 160px;  
   padding-top: 40px;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 279px 302px;
+  gap: 160px;
 }
 
 .footer__question {
@@ -76,7 +87,7 @@
 }
 
 .footer__boston {
-  margin-bottom: 37px;
+  margin-bottom: 37px;  
 }
 
 .footer__boston-link {  
@@ -107,8 +118,4 @@
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
   }
-}
-
-.footer__dog {
-  padding-top: 7px;
 }
