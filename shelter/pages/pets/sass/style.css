@@ -239,6 +239,14 @@ button {
   padding: 0 40px;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 60px;
+  }
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -256,7 +264,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 25px 0;
+  padding-top: 25px;
   padding-bottom: 29px;
 }
 
@@ -307,12 +315,36 @@ button {
   padding-top: 40px;
 }
 
+@media (max-width: 768px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 69px;
+    padding-top: 14px;
+    padding-left: 4px;
+  }
+}
+
 .footer__inner {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 279px 302px;
       grid-template-columns: 279px 302px;
   gap: 160px;
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    gap: 60px;
+  }
 }
 
 .footer__question {
@@ -433,6 +465,12 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
+@media (max-width: 768px) {
+  .footer__dog {
+    padding-right: 1px;
+  }
+}
+
 .our {
   background-color: #F6F6F6;
 }
@@ -513,9 +551,13 @@ button {
   background-color: #F1CDB3;
 }
 
+.card:nth-child(6) .card__img {
+  border-radius: 9px 9px 0px 0px;
+}
+
 .card__img {
   margin-bottom: 30px;
-  border-radius: 9px 9px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .card__title {
