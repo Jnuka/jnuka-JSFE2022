@@ -12,28 +12,59 @@
   grid-template-columns: 740px 300px;
   gap: 160px;  
   padding-top: 40px;
+  @include media-tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 69px;
+    padding-top: 14px;
+    padding-left: 4px;
+  }
+  @include media-mobile {
+    gap: 45px 0;
+  }
 }
 
 .footer__inner {
   display: grid;
   grid-template-columns: 279px 302px;
   gap: 160px;
+  @include media-tablet{
+    gap: 60px;
+  }
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+  }
 }
 
 .footer__question {
   display: flex;
   flex-direction: column;
   padding-top: 17px;
+  @include media-mobile {
+    padding-top: 15px;
+  }
 }
 
 .footer__title {
   color: $color-light;
   margin-bottom: 33px;
   max-width: 300px;
+  @include media-mobile {
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 40px;
+  }
 }
 
 .footer__question-title {
   margin-bottom: 44px;
+  @include media-mobile {
+    margin-bottom: 45px;    
+  }
 }
 
 .footer__subtitle {
@@ -57,6 +88,9 @@
     left: -1px;
     background-image: url(./../../../assets/icons/mail.svg);
   }
+  @include media-mobile {    
+    margin-left: 21px;
+  }
 }
 
 .footer__email-link {
@@ -74,6 +108,12 @@
     left: -1px;
     background-image: url(./../../../assets/icons/phone.svg);
   }
+  @include media-mobile {    
+    margin-left: 27px;
+    &::after {
+      top: -5px;
+    }
+  }
 }
 
 .footer__phone-link {
@@ -88,6 +128,9 @@
 
 .footer__boston {
   margin-bottom: 37px;  
+  @include media-mobile {
+    margin-bottom: 44px;  
+  }
 }
 
 .footer__boston-link {  
@@ -103,6 +146,13 @@
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
   }
+  @include media-mobile {
+    padding-left: 37px;
+    &::after {
+      top: 7px;
+      left: -4px;
+    }
+  }
 }
 
 .footer__london-link {
@@ -117,5 +167,21 @@
     top: -5px;
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
+  }
+  @include media-mobile {
+    padding-left: 38px;
+    &::after { 
+      top: -4px;
+    left: -4px;
+    }
+  }
+}
+
+.footer__dog {
+  @include media-tablet {
+    padding-right: 1px;
+  }
+  @include media-mobile {
+    max-width: 260px;
   }
 }

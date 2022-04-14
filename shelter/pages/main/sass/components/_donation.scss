@@ -9,26 +9,63 @@
   align-items: center;
   padding-top: 81px;
   padding-bottom: 100px;
+  @include media-tablet { 
+    display: flex;
+    flex-direction: column-reverse; 
+    padding-top: 81px;   
+  }
+  @include media-mobile {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }
 
 .donation__img {
   height: 100%;
   margin-right: 29px; 
+  @include media-tablet {
+    margin-right: 1px;
+  }
+  @include media-mobile {
+    max-width: 260px;
+    margin-right: 0;
+  }
 }
 
 .donation__info {
   max-width: 380px;
   padding-left: 1px;
+  @include media-tablet { 
+    margin-bottom: 60px;
+    padding-left: 0;
+  }
+  @include media-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 
 .donation__title {
   max-width: 306px;
   margin-bottom: 20px;
+  @include media-mobile {
+    max-width: 210px;
+    text-align: center;
+  }
 }
 
 .donation__name-bank {
   margin-bottom: 19px;
   color: $color-title;
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
+  @include media-mobile {
+    line-height: 24px;
+    letter-spacing: 0;
+  }
 }
 
 .donation__button {  
@@ -54,16 +91,35 @@
   &:hover {
     background-color: $color-primary-light;
   }
+  @include media-mobile {
+    max-width: 281px;
+    padding: 9px 0px;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+    &::after {
+      left: 14px;
+    }
+  }
 }
 
 .donation__button-link {
   padding-left: 60px;
   text-decoration: none;
   color: $color-title;
+  @include media-mobile {
+    @include font($size: 1.5rem, $height: 1.65rem);
+    padding-left: 57px;
+    padding-right: 17px;
+    letter-spacing: 0.09rem;
+  }
 }
 
 .donation__legal-info {
   @include font($size: 1.2rem, $height: 1.8rem, $style: italic);
   color: $color-description;
   letter-spacing: 0;
+  @include media-mobile {
+    text-align: justify;
+    padding: 9px;
+  }
 }

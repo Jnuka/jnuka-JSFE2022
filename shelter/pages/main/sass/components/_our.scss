@@ -14,6 +14,11 @@
   margin-top: 81px;
   margin-bottom: 59px;
   padding-left: 3px;
+  @include media-mobile {
+    margin-top: 42px;
+    margin-bottom: 42px;
+    padding-left: 1px;
+  }
 }
 
 .our__slider{
@@ -21,6 +26,15 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+  @include media-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+  }
+  @include media-mobile {
+    margin-bottom: 42px;
+  }
 }
 
 .our__arrow {
@@ -38,21 +52,43 @@
     border: 2px solid $color-primary-light;
     background-color: $color-primary-light;
   }
+  @include media-mobile {
+    order: 1;
+  }
 }
 
 .our__arrow-prev {
   margin-right: 53px;
+  @include media-tablet {
+    margin-right: 12px;
+  }
+  @include media-mobile {
+    margin-right: 80px;
+  }
 }
 
 .our__arrow-next {
   margin-left: 53px;
   transform:  rotate(0.5turn);
+  @include media-tablet {
+    margin-left: 12px;
+  }
+  @include media-mobile {
+    grid-row: 2;
+    margin-left: 0;
+  }
 }
 
 .our__content {
   display: flex;
   justify-content: space-between;
   gap: 90px;
+  @include media-tablet {
+    gap: 40px;
+  }
+  @include media-mobile {
+    margin-bottom: 20px;
+  }
 }
 
 .card {
@@ -70,6 +106,16 @@
       background-color: $color-primary;      
     }
   }
+  @include media-tablet {
+    &:last-child {
+      display: none;
+    }
+  }  
+  @include media-mobile {
+    &:nth-child(2) {
+      display: none;
+    }
+  }  
 }
 
 .card__img {
@@ -81,7 +127,7 @@
   letter-spacing: 0.06em;
   line-height: 2.272rem;
   margin-bottom: 30px;
-  color: $color-title;
+  color: $color-title;  
 }
 
 .card__button {
@@ -111,5 +157,11 @@
   border-radius: 100px;
   &:hover {
     background-color: $color-primary-light; 
+  }
+  @include media-tablet{
+    padding: 15px 44px;
+  }
+  @include media-mobile {
+    margin-bottom: 42px;
   }
 }
