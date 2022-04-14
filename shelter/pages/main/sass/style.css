@@ -311,7 +311,7 @@ button {
   .wrapper {
     max-width: 1279px;
     margin: auto;
-    padding: 0 60px;
+    padding: 0 30px;
   }
 }
 
@@ -421,7 +421,7 @@ button {
             align-items: center;
     gap: 69px;
     padding-top: 14px;
-    padding-left: 4px;
+    padding-left: 33px;
   }
 }
 

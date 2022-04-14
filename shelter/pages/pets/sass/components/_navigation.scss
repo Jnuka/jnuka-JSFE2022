@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: 'Arial-ex';
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .navigation__item {

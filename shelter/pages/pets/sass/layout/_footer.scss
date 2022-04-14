@@ -5,6 +5,12 @@
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
+  @include media-tablet {
+    padding: 0 60px;
+  }
+  @include media-mobile {
+    padding: 0 10px;
+  }
 }
 
 .footer__content {
@@ -18,10 +24,10 @@
     align-items: center;
     gap: 69px;
     padding-top: 14px;
-    padding-left: 33px;
+    padding-left: 4px;
   }
   @include media-mobile {
-    gap: 45px 0;
+    gap: 44px;
   }
 }
 
@@ -57,6 +63,9 @@
     text-align: center;
     margin-right: 3px;
     margin-bottom: 40px;
+  }
+  @include media-mobile {
+    @include font ($size: 2.5rem, $height: 3.25rem);
   }
 }
 
@@ -182,6 +191,7 @@
     padding-right: 1px;
   }
   @include media-mobile {
+    padding-right: 2px;
     max-width: 260px;
   }
 }

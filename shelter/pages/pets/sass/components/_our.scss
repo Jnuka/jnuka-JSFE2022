@@ -14,7 +14,16 @@
   margin-top: 81px;
   margin-bottom: 59px;
   padding-left: 2px;
+  @include media-tablet {
+    margin-bottom: 30px;
+  }
+  @include media-mobile {
+    @include font ($size: 2.5rem, $height: 3.25rem);
+    margin-top: 42px;
+    margin-bottom: 41px;
+  }
 }
+
 
 .our__slider{
   display: flex;
@@ -22,6 +31,12 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 100px;
+  @include media-tablet {
+    margin-bottom: 76px;
+  }
+  @include media-mobile {
+    margin-bottom: 42px;
+  }
 }
 
 .our__content {
@@ -30,6 +45,13 @@
   justify-content: space-between;
   gap: 30px 40px;
   margin-bottom: 60px;
+  @include media-tablet {
+    justify-content: center;
+    margin-bottom: 39px;
+  }
+  @include media-mobile {
+    margin-bottom: 42px;
+  }
 }
 
 .card {
@@ -51,6 +73,21 @@
     .card__img {
       border-radius: 9px 9px 0px 0px;
     }    
+  }
+  @include media-tablet {
+    &:nth-child(7),
+    &:nth-child(8) {
+      display: none;
+    }
+  }
+  @include media-mobile {
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      display: none;
+    }
   }
 }
 
@@ -84,6 +121,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  @include media-mobile {
+    gap: 10px;
+  }
 }
 
 .paginator__button {
