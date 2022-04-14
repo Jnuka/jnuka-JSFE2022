@@ -145,6 +145,10 @@
 .paginator__button-activ {
   border: 2px solid $color-primary;
   background-color: $color-primary;
+  &:hover {
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+  }
 }
 
 .paginator__text {

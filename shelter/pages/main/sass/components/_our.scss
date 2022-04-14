@@ -30,7 +30,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+    max-width: 270px; 
   }
   @include media-mobile {
     margin-bottom: 42px;

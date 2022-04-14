@@ -381,6 +381,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
     gap: 69px;
     padding-top: 14px;
     padding-left: 4px;
@@ -390,6 +391,7 @@ button {
 @media (max-width: 700px) {
   .footer__content {
     gap: 44px;
+    margin: 0 auto;
   }
 }
 
@@ -543,6 +545,12 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 17px;
+}
+
+@media (max-width: 700px) {
+  .footer__visit {
+    max-width: 300px;
+  }
 }
 
 .footer__boston {
@@ -832,6 +840,11 @@ button {
 }
 
 .paginator__button-activ {
+  border: 2px solid #F1CDB3;
+  background-color: #F1CDB3;
+}
+
+.paginator__button-activ:hover {
   border: 2px solid #F1CDB3;
   background-color: #F1CDB3;
 }

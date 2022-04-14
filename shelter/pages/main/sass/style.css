@@ -419,15 +419,18 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
     gap: 69px;
     padding-top: 14px;
-    padding-left: 33px;
+    padding-left: 4px;
   }
 }
 
 @media (max-width: 700px) {
   .footer__content {
     gap: 45px 0;
+    margin: 0 auto;
+    padding-top: 15px;
   }
 }
 
@@ -572,6 +575,12 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 17px;
+}
+
+@media (max-width: 700px) {
+  .footer__visit {
+    max-width: 300px;
+  }
 }
 
 .footer__boston {
@@ -1014,6 +1023,7 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 270px;
   }
 }
 
@@ -1369,7 +1379,7 @@ button {
 @media (max-width: 700px) {
   .donation__content {
     padding-top: 42px;
-    padding-bottom: 42px;
+    padding-bottom: 41px;
   }
 }
 
