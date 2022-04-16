@@ -288,6 +288,7 @@ button {
   position: sticky;
   top: 0;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 
 .header__wrapper {
