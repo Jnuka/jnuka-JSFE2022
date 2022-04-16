@@ -1,0 +1,19 @@
+.header__hamburger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 22px;
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+}
+
+.header__hamburger-line {
+  width: 100%;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+}

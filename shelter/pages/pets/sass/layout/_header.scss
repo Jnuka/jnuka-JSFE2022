@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   background-color: $color-light;
+  z-index: 1;
 }
 
 .header__wrapper {
@@ -10,6 +11,9 @@
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 29px;
+  @include media-mobile {
+    padding-right: 52px;
+  }
 }
 
 .logo {
