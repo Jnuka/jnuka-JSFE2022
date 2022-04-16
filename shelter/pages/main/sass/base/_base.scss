@@ -71,12 +71,18 @@ footer {
 
 h2 {  
   @include font($size: 4.4rem, $height: 5.72rem);
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.2rem);
+  }
 }
 
 h3 {    
   letter-spacing: 0.06em;
   @include font($size: 3.5rem, $height: 4.5rem);
   color: $color-title;
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.2rem);
+  }
 }
 
 h4 {  

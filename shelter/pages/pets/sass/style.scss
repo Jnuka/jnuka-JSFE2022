@@ -9,11 +9,12 @@
 
 // Base
 @import "base/base";
+@import "./../../main/sass/base/hamburger";
 
 //Layout
 @import "./../../main/sass/layout/wrapper";
 @import "layout/header";
-@import "./../../main/sass/layout/footer";
+@import "layout/footer";
 
 
 //Components
