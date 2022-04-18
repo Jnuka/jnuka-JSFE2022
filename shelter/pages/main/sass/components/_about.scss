@@ -4,18 +4,60 @@
   align-items: center;
   margin-top: 80px;
   margin-bottom: 100px;
+  @include media-tablet { 
+    display: flex;
+    flex-direction: column-reverse;    
+  }
+  @include media-mobile {
+    margin-top: 43px;
+    padding: 0 25px; 
+    margin-bottom: 42px;
+  }
 }
 
 .about__content {
   margin-left: 120px;
   max-width: 430px;
+  @include media-tablet {
+    margin-bottom: 80px;
+    margin-left: 0;
+  }
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 41px;
+  }
 }
 
 .about__title {
   margin-bottom: 24px;
   max-width: 310px;
+  @include media-tablet {
+    margin-bottom: 25px;
+  }
+  @include media-mobile {    
+    max-width: 220px;
+    text-align: center;
+  }
+}
+
+.about__text {
+  @include media-mobile {
+    text-align: justify;
+    max-width: 270px;
+  }
 }
 
 .about__text-top {
   margin-bottom: 25px;
+  @include media-mobile {
+    margin-bottom: 22px;
+  }
+}
+
+.about__pets {
+  @include media-mobile {
+    max-width: 260px;
+  }
 }
