@@ -195,7 +195,7 @@ h2 {
   font-style: normal;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   h2 {
     font-size: 2.5rem;
     line-height: 3.2rem;
@@ -213,7 +213,7 @@ h3 {
   color: #545454;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   h3 {
     font-size: 2.5rem;
     line-height: 3.2rem;
@@ -280,7 +280,7 @@ button {
   height: 22px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .header__hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,15 +309,15 @@ button {
 
 @media (max-width: 1279px) {
   .wrapper {
-    max-width: 1279px;
+    max-width: 768px;
     margin: auto;
     padding: 0 30px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .wrapper {
-    max-width: 700px;
+    max-width: 400px;
     margin: auto;
     padding: 0 10px;
   }
@@ -345,7 +345,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .header__wrapper {
     padding: 25px 53px 0 10px;
     margin-bottom: 58px;
@@ -426,7 +426,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__content {
     gap: 45px 0;
     margin: 0 auto;
@@ -448,7 +448,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -475,7 +475,7 @@ button {
   padding-top: 17px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__question {
     padding-top: 15px;
   }
@@ -487,11 +487,12 @@ button {
   max-width: 300px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__title {
     text-align: center;
     margin-right: 3px;
     margin-bottom: 40px;
+    max-width: 293px;
   }
 }
 
@@ -499,7 +500,7 @@ button {
   margin-bottom: 44px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__question-title {
     margin-bottom: 45px;
   }
@@ -529,7 +530,7 @@ button {
   background-image: url(./../../../assets/icons/mail.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__email {
     margin-left: 21px;
   }
@@ -553,7 +554,7 @@ button {
   background-image: url(./../../../assets/icons/phone.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__phone {
     margin-left: 27px;
   }
@@ -577,7 +578,7 @@ button {
   padding-top: 17px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__visit {
     max-width: 300px;
   }
@@ -587,7 +588,7 @@ button {
   margin-bottom: 37px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__boston {
     margin-bottom: 44px;
   }
@@ -611,7 +612,7 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__boston-link {
     padding-left: 37px;
   }
@@ -639,7 +640,7 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__london-link {
     padding-left: 38px;
   }
@@ -655,7 +656,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__dog {
     max-width: 260px;
   }
@@ -714,7 +715,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .not-only__content {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -737,7 +738,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .not-only__title {
     letter-spacing: 0.15rem;
     max-width: 230px;
@@ -754,6 +755,12 @@ button {
 @media (max-width: 1279px) {
   .not-only__text {
     margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .not-only__text {
+    max-width: 300px;
   }
 }
 
@@ -777,7 +784,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .not-only__button {
     margin-right: 1px;
   }
@@ -801,7 +808,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .not-only__image {
     max-width: 260px;
     margin-left: 40px;
@@ -820,7 +827,7 @@ button {
   font-family: 'Arial-ex';
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .navigation {
     display: none;
   }
@@ -889,7 +896,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__wrapper {
     margin-top: 43px;
     padding: 0 25px;
@@ -909,7 +916,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -936,16 +943,17 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__title {
     max-width: 220px;
     text-align: center;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__text {
     text-align: justify;
+    max-width: 270px;
   }
 }
 
@@ -953,13 +961,13 @@ button {
   margin-bottom: 25px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__text-top {
     margin-bottom: 22px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__pets {
     max-width: 260px;
   }
@@ -989,7 +997,7 @@ button {
   padding-left: 3px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__title {
     margin-top: 42px;
     margin-bottom: 42px;
@@ -1010,7 +1018,7 @@ button {
   margin-bottom: 60px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__slider {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1027,7 +1035,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__slider {
     margin-bottom: 42px;
   }
@@ -1056,7 +1064,7 @@ button {
   background-color: #FDDCC4;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__arrow {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1074,7 +1082,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__arrow-prev {
     margin-right: 80px;
   }
@@ -1092,7 +1100,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__arrow-next {
     -ms-grid-row: 2;
     grid-row: 2;
@@ -1116,7 +1124,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__content {
     margin-bottom: 20px;
   }
@@ -1154,7 +1162,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .card:nth-child(2) {
     display: none;
   }
@@ -1215,7 +1223,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__button {
     margin-bottom: 42px;
   }
@@ -1240,7 +1248,7 @@ button {
   margin: 81px 0 49px 3px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .help__title {
     max-width: 260px;
     margin: 42px 0 33px 1px;
@@ -1275,7 +1283,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .help__content {
     display: -ms-grid;
     display: grid;
@@ -1317,7 +1325,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .help__card:nth-child(8) {
     padding-top: 17px;
   }
@@ -1327,7 +1335,7 @@ button {
   margin-bottom: 31px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .help__card-img {
     max-width: 50px;
     max-height: 50px;
@@ -1335,7 +1343,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .help__card-title {
     font-size: 1.5rem;
     line-height: 1.65rem;
@@ -1376,7 +1384,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__content {
     padding-top: 42px;
     padding-bottom: 41px;
@@ -1394,7 +1402,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__img {
     max-width: 260px;
     margin-right: 0;
@@ -1413,7 +1421,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1432,7 +1440,7 @@ button {
   margin-bottom: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__title {
     max-width: 210px;
     text-align: center;
@@ -1450,7 +1458,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__name-bank {
     line-height: 24px;
     letter-spacing: 0;
@@ -1483,7 +1491,7 @@ button {
   background-color: #FDDCC4;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__button {
     max-width: 281px;
     padding: 9px 0px;
@@ -1501,7 +1509,7 @@ button {
   color: #545454;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__button-link {
     font-size: 1.5rem;
     line-height: 1.65rem;
@@ -1522,10 +1530,11 @@ button {
   letter-spacing: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .donation__legal-info {
     text-align: justify;
     padding: 9px;
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

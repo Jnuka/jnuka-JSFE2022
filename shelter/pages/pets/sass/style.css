@@ -240,7 +240,7 @@ button {
   height: 22px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .header__hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -269,15 +269,15 @@ button {
 
 @media (max-width: 1279px) {
   .wrapper {
-    max-width: 1279px;
+    max-width: 768px;
     margin: auto;
     padding: 0 30px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .wrapper {
-    max-width: 700px;
+    max-width: 400px;
     margin: auto;
     padding: 0 10px;
   }
@@ -305,7 +305,7 @@ button {
   padding-bottom: 29px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .header__wrapper {
     padding-right: 52px;
   }
@@ -355,7 +355,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__wrapper {
     padding: 0 10px;
   }
@@ -389,7 +389,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__content {
     gap: 44px;
     margin: 0 auto;
@@ -410,7 +410,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -437,7 +437,7 @@ button {
   padding-top: 17px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__question {
     padding-top: 15px;
   }
@@ -449,7 +449,7 @@ button {
   max-width: 300px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__title {
     text-align: center;
     margin-right: 3px;
@@ -457,12 +457,13 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__title {
     font-size: 2.5rem;
     line-height: 3.25rem;
     font-weight: 400;
     font-style: normal;
+    max-width: 293px;
   }
 }
 
@@ -470,7 +471,7 @@ button {
   margin-bottom: 44px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__question-title {
     margin-bottom: 45px;
   }
@@ -500,7 +501,7 @@ button {
   background-image: url(./../../../assets/icons/mail.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__email {
     margin-left: 21px;
   }
@@ -524,7 +525,7 @@ button {
   background-image: url(./../../../assets/icons/phone.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__phone {
     margin-left: 27px;
   }
@@ -548,7 +549,7 @@ button {
   padding-top: 17px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__visit {
     max-width: 300px;
   }
@@ -558,7 +559,7 @@ button {
   margin-bottom: 37px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__boston {
     margin-bottom: 44px;
   }
@@ -582,7 +583,7 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__boston-link {
     padding-left: 37px;
   }
@@ -610,7 +611,7 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__london-link {
     padding-left: 38px;
   }
@@ -626,7 +627,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .footer__dog {
     padding-right: 2px;
     max-width: 260px;
@@ -663,7 +664,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__title {
     font-size: 2.5rem;
     line-height: 3.25rem;
@@ -697,7 +698,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__slider {
     margin-bottom: 42px;
   }
@@ -721,11 +722,12 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 1199px;
     margin-bottom: 39px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .our__content {
     margin-bottom: 42px;
   }
@@ -767,7 +769,7 @@ button {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .card:nth-child(4), .card:nth-child(5), .card:nth-child(6), .card:nth-child(7), .card:nth-child(8) {
     display: none;
   }
@@ -812,7 +814,7 @@ button {
   gap: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .paginator {
     gap: 10px;
   }
@@ -881,7 +883,7 @@ button {
   font-family: 'Arial-ex';
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .navigation {
     display: none;
   }

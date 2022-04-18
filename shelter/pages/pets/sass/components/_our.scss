@@ -47,6 +47,7 @@
   margin-bottom: 60px;
   @include media-tablet {
     justify-content: center;
+    max-width: 1199px;
     margin-bottom: 39px;
   }
   @include media-mobile {
