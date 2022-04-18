@@ -121,5 +121,6 @@
   @include media-mobile {
     text-align: justify;
     padding: 9px;
+    max-width: 300px;
   }
 }

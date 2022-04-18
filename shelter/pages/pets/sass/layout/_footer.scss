@@ -68,6 +68,7 @@
   }
   @include media-mobile {
     @include font ($size: 2.5rem, $height: 3.25rem);
+    max-width: 293px;
   }
 }
 
