@@ -53,6 +53,9 @@
   @include media-tablet {
     margin-bottom: 42px;
   }
+  @include media-mobile {
+    max-width: 300px;
+  }
 }
 
 .not-only__button {
