@@ -13,8 +13,12 @@ body {
   letter-spacing: 0.06px;  
   cursor: url(../../../assets/icons/pointer/pointer.png), url(../../../assets/icons/pointer/pointer.cur), default;
   a {
-    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover.cur), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../assets/icons/pointer/pointer-hover.cur), default;
   }
+}
+
+.body__no-scroll {
+  overflow: hidden;
 }
 
 .background {
@@ -26,15 +30,17 @@ body {
   a,
   a::before,
   h1,
-  p {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+  p,
+  .header__hamburger,
+  .header__hamburger-line {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
   }
 }
 
 .not-only {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
   a {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
   }
 }
 
@@ -43,13 +49,13 @@ body {
   a,
   button,
   .card {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
   }
 }
 
 .help {
   .help__card {
-    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover.cur), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../assets/icons/pointer/pointer-hover.cur), default;
   }  
 }
 
@@ -57,7 +63,7 @@ body {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
   .donation__button,
   .donation__button-link {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
   }
 }
 
@@ -65,7 +71,7 @@ footer {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
   a,
   .footer__boston {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
   }
 }
 

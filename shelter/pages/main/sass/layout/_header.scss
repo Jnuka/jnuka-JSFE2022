@@ -16,7 +16,10 @@
 }
 
 .header__logo {
-  cursor: pointer;
+  display: block;
+  cursor: pointer;  
+  @extend %transition;
+  z-index: 10;
   &:hover {
     .logo {
       color: $color-primary-light;  
@@ -25,6 +28,12 @@
       color: $color-gray;
     }
   }
+}
+
+.header__logo-inactive {
+  z-index: 10;
+  opacity: 0;
+  transition: all .9s ease-in-out;
 }
 
 .logo {
@@ -42,4 +51,32 @@
   color: $color-light;
   padding-left: 4px;
   @extend %transition;
+}
+
+.header__content {  
+  .header__logo {
+    display: none;
+  }
+  @include media-mobile {   
+    display: flex;
+    flex-direction: column;
+    position: fixed;  
+    overflow: auto;   
+    padding: 25px 9px 0 10px;
+    gap: 158px;
+    width: 320px;
+    height: 100%;  
+    top: 0;
+    right: -100%;
+    z-index: 30;
+    background: $color-text-button;  
+    transition: all .9s ease-out;
+    .header__logo {
+      display: block;
+    }    
+  }
+}
+
+.header__content-active {
+  right: 0;
 }

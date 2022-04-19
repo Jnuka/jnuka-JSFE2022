@@ -103,7 +103,7 @@ input, select {
   src: url("../../../assets/fonts/arial/arial-regular.woff") format("woff2"), url("../../../assets/fonts/arial/arial-regular.woff2") format("woff");
 }
 
-.logo, .logo-subtitle, .card, .card__button, .paginator__button, .navigation__link {
+.header__hamburger, .logo, .logo-subtitle, .card, .card__button, .paginator__button, .navigation__link {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -255,10 +255,56 @@ button {
   }
 }
 
+.header__inner {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 41px;
+  }
+}
+
+.header__logo-active {
+  display: block;
+  z-index: 30;
+}
+
+.header__hamburger-active {
+  z-index: 30;
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
 .header__hamburger-line {
   width: 100%;
   background-color: #F1CDB3;
   border: 1px solid #F1CDB3;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-active {
+  display: block;
+  width: 100%;
+  z-index: 30;
+}
+
+.header__burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper {
@@ -277,10 +323,32 @@ button {
 
 @media (max-width: 767px) {
   .wrapper {
-    max-width: 400px;
+    max-width: 767px;
     margin: auto;
     padding: 0 10px;
   }
+}
+
+.header__background {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__background {
+    display: block;
+    position: fixed;
+    overflow: auto;
+    width: 767px;
+    height: 100%;
+    top: 0;
+    right: 300%;
+    z-index: 1;
+    background-color: rgba(41, 41, 41, 0.6);
+  }
+}
+
+.header__background-active {
+  right: 0;
 }
 
 .header {
@@ -334,6 +402,12 @@ button {
   letter-spacing: 0.1em;
   padding-left: 4px;
   color: #292929;
+}
+
+.header__hamburger-line {
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid #000000;
 }
 
 .footer {
@@ -570,7 +644,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
 }
 
 .footer__boston-link::after {
@@ -581,6 +655,15 @@ button {
   top: 6px;
   left: -1px;
   background-image: url(./../../../assets/icons/pin.svg);
+}
+
+@media (max-width: 1279px) {
+  .footer__boston-link {
+    padding-left: 40px;
+  }
+  .footer__boston-link::after {
+    left: -3px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -598,7 +681,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
 }
 
 .footer__london-link::after {
@@ -609,6 +692,15 @@ button {
   top: -5px;
   left: -1px;
   background-image: url(./../../../assets/icons/pin.svg);
+}
+
+@media (max-width: 1279px) {
+  .footer__london-link {
+    padding-left: 40px;
+  }
+  .footer__london-link::after {
+    left: -3px;
+  }
 }
 
 @media (max-width: 767px) {

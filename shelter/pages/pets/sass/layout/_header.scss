@@ -37,3 +37,8 @@
   @extend %transition;
 }
 
+.header__hamburger-line {
+  width: 100%;
+  background-color: $color-burger;
+  border: 1px solid $color-burger;
+}

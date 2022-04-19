@@ -151,7 +151,7 @@
 .footer__boston-link {  
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
   &::after {
     position: absolute;
     content: '';
@@ -160,6 +160,12 @@
     top: 6px;
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
+  }
+  @include media-tablet {
+    padding-left: 40px;
+    &::after {
+      left: -3px;
+    }
   }
   @include media-mobile {
     padding-left: 37px;
@@ -173,7 +179,7 @@
 .footer__london-link {
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
   &::after {
     position: absolute;
     content: '';
@@ -182,6 +188,12 @@
     top: -5px;
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
+  }
+  @include media-tablet {
+    padding-left: 40px;
+    &::after {
+      left: -3px;
+    }
   }
   @include media-mobile {
     padding-left: 38px;
