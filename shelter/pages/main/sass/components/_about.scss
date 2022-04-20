@@ -43,6 +43,7 @@
 }
 
 .about__text {
+  letter-spacing: 0;
   @include media-mobile {
     text-align: justify;
     max-width: 270px;

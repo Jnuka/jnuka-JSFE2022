@@ -307,7 +307,7 @@ button {
 
 @media (max-width: 767px) {
   .header__wrapper {
-    padding-right: 52px;
+    padding-right: 53px;
   }
 }
 
@@ -334,6 +334,12 @@ button {
   letter-spacing: 0.1em;
   padding-left: 4px;
   color: #292929;
+}
+
+.header__hamburger-line {
+  width: 100%;
+  background-color: #000000;
+  border: 1px solid #000000;
 }
 
 .footer {
@@ -497,8 +503,14 @@ button {
   width: 40px;
   height: 26px;
   top: -2px;
-  left: -1px;
+  left: 0;
   background-image: url(./../../../assets/icons/mail.svg);
+}
+
+@media (max-width: 1279px) {
+  .footer__email::after {
+    left: -2px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -521,8 +533,14 @@ button {
   width: 40px;
   height: 32px;
   top: -5px;
-  left: -1px;
+  left: 0;
   background-image: url(./../../../assets/icons/phone.svg);
+}
+
+@media (max-width: 1279px) {
+  .footer__phone::after {
+    left: -2px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -570,7 +588,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
 }
 
 .footer__boston-link::after {
@@ -583,12 +601,21 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
+@media (max-width: 1279px) {
+  .footer__boston-link {
+    padding-left: 40px;
+  }
+  .footer__boston-link::after {
+    left: -3px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer__boston-link {
     padding-left: 37px;
   }
   .footer__boston-link::after {
-    top: 7px;
+    top: 6px;
     left: -4px;
   }
 }
@@ -598,7 +625,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
 }
 
 .footer__london-link::after {
@@ -611,12 +638,21 @@ button {
   background-image: url(./../../../assets/icons/pin.svg);
 }
 
+@media (max-width: 1279px) {
+  .footer__london-link {
+    padding-left: 40px;
+  }
+  .footer__london-link::after {
+    left: -3px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer__london-link {
     padding-left: 38px;
   }
   .footer__london-link::after {
-    top: -4px;
+    top: -5px;
     left: -4px;
   }
 }
