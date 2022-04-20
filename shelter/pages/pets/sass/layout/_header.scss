@@ -12,7 +12,7 @@
   padding-top: 25px;
   padding-bottom: 29px;
   @include media-mobile {
-    padding-right: 52px;
+    padding-right: 53px;
   }
 }
 
@@ -37,3 +37,8 @@
   @extend %transition;
 }
 
+.header__hamburger-line {
+  width: 100%;
+  background-color: $color-burger;
+  border: 1px solid $color-burger;
+}
