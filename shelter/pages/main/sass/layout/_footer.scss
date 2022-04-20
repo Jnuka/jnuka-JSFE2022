@@ -89,8 +89,13 @@
     width: 40px;
     height: 26px;
     top: -2px;
-    left: -1px;
+    left: 0px;
     background-image: url(./../../../assets/icons/mail.svg);
+  }
+  @include media-tablet {
+    &::after {
+      left: -2px;
+    }
   }
   @include media-mobile {    
     margin-left: 21px;
@@ -109,8 +114,13 @@
     width: 40px;
     height: 32px;
     top: -5px;
-    left: -1px;
+    left: 0px;
     background-image: url(./../../../assets/icons/phone.svg);
+  }
+  @include media-tablet {
+    &::after {
+      left: -2px;
+    }
   }
   @include media-mobile {    
     margin-left: 27px;
@@ -143,7 +153,7 @@
 .footer__boston-link {  
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
   &::after {
     position: absolute;
     content: '';
@@ -152,6 +162,12 @@
     top: 6px;
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
+  }
+  @include media-tablet {
+    padding-left: 40px;
+    &::after {
+      left: -3px;
+    }
   }
   @include media-mobile {
     padding-left: 37px;
@@ -165,7 +181,7 @@
 .footer__london-link {
   display: flex;
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
   &::after {
     position: absolute;
     content: '';
@@ -175,11 +191,17 @@
     left: -1px;
     background-image: url(./../../../assets/icons/pin.svg);
   }
+  @include media-tablet {
+    padding-left: 40px;
+    &::after {
+      left: -3px;
+    }
+  }
   @include media-mobile {
     padding-left: 38px;
     &::after { 
       top: -4px;
-    left: -4px;
+      left: -4px;
     }
   }
 }
