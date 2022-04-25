@@ -15,6 +15,13 @@ body {
   a {
     cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../assets/icons/pointer/pointer-hover.cur), default;
   }
+  .modal__close-button,
+  .overlay {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
+  }
+  .modal__wrapper {
+    cursor: url(../../../assets/icons/pointer/pointer.png), url(../../../assets/icons/pointer/pointer.cur), default;
+  }
 }
 
 .body__no-scroll {
@@ -120,6 +127,7 @@ button {
 .about, 
 .help,
 .our,
-.donation {
+.donation,
+.modal__content {
   @include color-selection($color: $color-selection-light);
 }

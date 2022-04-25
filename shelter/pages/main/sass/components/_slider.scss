@@ -1,0 +1,91 @@
+.our__content {
+  position: relative;
+}
+
+$second: 0.5s;
+
+:root {
+  --from-carousel-right: -1080px;
+  --to-carousel-right: -2160px;
+
+  --from-carousel-left: -1080px;
+  --to-carousel-left: 0;
+}
+
+@keyframes carousel-right-desktop {  
+  from {left: var(--from-carousel-right);}
+  to {left: var(--to-carousel-right);}  
+}
+
+@keyframes carousel-left-desktop {
+  from {left: var(--from-carousel-left);}
+  to {left: var(--to-carousel-left);}  
+}
+
+.transition-right {
+  animation-name: carousel-right-desktop;
+  animation-duration: $second;
+  
+}
+
+.transition-left {
+  animation-name: carousel-left-desktop;
+  animation-duration: $second;
+}
+
+@include media-tablet {
+  :root {
+    --from-carousel-right: -620px;
+    --to-carousel-right: -1240px;
+    
+    --from-carousel-left: -620px;
+    --to-carousel-left: 0;
+  } 
+  @keyframes carousel-right-tablet {  
+    from {left: var(--from-carousel-right);
+    }
+    to {left: var(--to-carousel-right);
+      }  
+  }
+  @keyframes carousel-left-tablet {
+    from {left: var(--from-carousel-left);}
+    to {left: var(--to-carousel-left);}  
+  }
+  .transition-right {
+    animation-name: carousel-right-tablet;
+    animation-duration: $second;
+  }
+  
+  .transition-left {
+    animation-name: carousel-left-tablet;
+    animation-duration: $second;
+  }
+}
+
+@include media-mobile {
+  :root {
+    --from-carousel-right: -310px;
+    --to-carousel-right: -620px;
+    
+    --from-carousel-left: -310px;
+    --to-carousel-left: 0;
+  }
+  @keyframes carousel-right-mobile {  
+    from {left: var(--from-carousel-right);}
+    to {left: var(--to-carousel-right);}  
+  }
+  @keyframes carousel-left-mobile {
+    from {left: var(--from-carousel-left);}
+    to {left: var(--to-carousel-left);}  
+  }
+  .transition-right {
+    animation-name: carousel-right-mobile;
+    animation-duration: $second;
+  }
+  
+  .transition-left {
+    animation-name: carousel-left-mobile;
+    animation-duration: $second;
+  }
+}
+

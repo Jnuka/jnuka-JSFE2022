@@ -15,7 +15,6 @@ if (hamburger) {
 
 const navigationItems = document.querySelectorAll('.navigation__item');
 
-
 if (navigationItems) {  
   navigationItems.forEach(navigationItem => {
     navigationItem.addEventListener('click', function(e) {
@@ -26,4 +25,14 @@ if (navigationItems) {
       mainLogo.classList.toggle('header__logo-inactive');  
     })
   });
-}
+};
+
+if (backgroundMenu) {
+  backgroundMenu.addEventListener("click", function(e) {
+    document.body.classList.remove('body__no-scroll');
+    hamburger.classList.remove('header__hamburger-active');
+    contentNavigation.classList.remove('header__content-active');        
+    backgroundMenu.classList.remove('header__background-active');
+    mainLogo.classList.toggle('header__logo-inactive');  
+  })
+};
