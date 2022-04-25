@@ -1326,6 +1326,18 @@ button {
   }
 }
 
+@media (max-width: 1279px) {
+  .our__arrow-prev {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our__arrow-prev {
+    margin-right: 80px;
+  }
+}
+
 .our__arrow-next {
   -webkit-transform: rotate(0.5turn);
           transform: rotate(0.5turn);
@@ -1382,6 +1394,18 @@ button {
     margin-bottom: 20px;
     max-width: 270px;
     left: -310px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .our__content {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our__content {
+    margin-bottom: 20px;
   }
 }
 

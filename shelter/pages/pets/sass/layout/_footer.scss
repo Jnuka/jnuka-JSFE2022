@@ -197,7 +197,7 @@
   }
   @include media-mobile {
     padding-left: 38px;
-    &::after { 
+    &::after {
       top: -4px;
     left: -4px;
     }
