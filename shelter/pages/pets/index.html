@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Pets</title>
-  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./sass/style.css">
   <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
 </head>
@@ -24,35 +23,48 @@
           </p>
         </a>
       </div>
-      <nav class="header__navigation">
-        <ul class="navigation">
-          <li class="navigation__item">
-            <a class="navigation__link" href="./../main/index.html">
-              About the shelter
-            </a>
-          </li>
-          <li class="navigation__item navigation__item-activ">
-            <a class="navigation__link" href="./../pets/index.html">
-              Our pets
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="./../main/index.html#help-id">
-              Help the shelter
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#contact-id">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <span class="header__hamburger">
+      <div class="header__content">
+        <div class="header__logo">
+          <a class="logo-link" href="./../main/index.html">
+            <h1 class="logo">
+              Cozy House
+            </h1>
+            <p class="logo-subtitle">
+              Shelter for pets in Boston
+            </p>
+          </a>
+        </div>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./../main/index.html">
+                About the shelter
+              </a>
+            </li>
+            <li class="navigation__item navigation__item-activ">
+              <a class="navigation__link" href="#">
+                Our pets
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./../main/index.html#help-id">
+                Help the shelter
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact-id">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__hamburger">
         <span class="header__hamburger-line"></span>
         <span class="header__hamburger-line"></span>
         <span class="header__hamburger-line"></span>
-      </span>
+      </div>
+      <div class="header__background"></div>
     </div>
   </header>
   <main class="main">
@@ -62,94 +74,96 @@
           Our friends who<br> are looking for a house
         </h3>
         <div class="our__slider">
-          <div class="our__content">
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/katrine.png" alt="Katrine">
-              <h4 class="card__title">
-                Katrine
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/jennifer.png" alt="Jennifer">
-              <h4 class="card__title">
-                Jennifer
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/woody.png" alt="Woody">
-              <h4 class="card__title">
-                Woody
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/sophia.png" alt="Sophia">
-              <h4 class="card__title">
-                Sophia
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/timmy.png" alt="Timmy">
-              <h4 class="card__title">
-                Timmy
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/charly.png" alt="Charly">
-              <h4 class="card__title">
-                Charly
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/scarlett.png" alt="Scarlett">
-              <h4 class="card__title">
-                Scarlett
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/freddie.png" alt="Freddie">
-              <h4 class="card__title">
-                Freddie
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
+          <div class="our__background">
+            <div class="our__content">
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/katrine.png" alt="Katrine">
+                <h4 class="card__title">
+                  Katrine
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/jennifer.png" alt="Jennifer">
+                <h4 class="card__title">
+                  Jennifer
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/woody.png" alt="Woody">
+                <h4 class="card__title">
+                  Woody
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/sophia.png" alt="Sophia">
+                <h4 class="card__title">
+                  Sophia
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/timmy.png" alt="Timmy">
+                <h4 class="card__title">
+                  Timmy
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/charly.png" alt="Charly">
+                <h4 class="card__title">
+                  Charly
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/scarlett.png" alt="Scarlett">
+                <h4 class="card__title">
+                  Scarlett
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
+              <div class="card">
+                <img class="card__img" src="./../../assets/images/our-friends/freddie.png" alt="Freddie">
+                <h4 class="card__title">
+                  Freddie
+                </h4>
+                <button class="card__button">
+                  Learn more
+                </button>
+              </div>
             </div>
           </div>
-          <div class="paginator">
-            <button class="paginator__button paginator__text paginator__button-disabled">
+          <div class="paginator" id="contact-id">
+            <button class="paginator__button paginator__text paginator__button-disabled" id="endLeft">
               &lt;&lt;
             </button>
-            <button class="paginator__button paginator__text paginator__button-disabled">
+            <button class="paginator__button paginator__text paginator__button-disabled" id="left">
               &lt;
             </button>
-            <button class="paginator__button paginator__text paginator__button-activ">
+            <button class="paginator__button paginator__text paginator__button-activ" id="pageNumber">
               1
             </button>
-            <button class="paginator__button paginator__text">
+            <button class="paginator__button paginator__text" id="right">
               &gt;
             </button>
-            <button class="paginator__button paginator__text">
+            <button class="paginator__button paginator__text" id="endRight">
               &gt;&gt;
             </button>
           </div>
@@ -159,7 +173,7 @@
     </section>
   </main>
 
-  <footer class="footer" id="contact-id">
+  <footer class="footer">
     <div class="wrapper footer__wrapper">
       <div class="footer__content">
         <div class="footer__inner">
@@ -200,6 +214,10 @@
       </div>
     </div>
   </footer>
+
+  </div>
+  <script type="module" src="index.js"></script>
+  <script type="text/javascript" src="./js/burgerMenu.js"></script>
 </body>
 
 </html>

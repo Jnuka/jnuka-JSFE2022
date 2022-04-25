@@ -97,13 +97,8 @@
     width: 40px;
     height: 26px;
     top: -2px;
-    left: 0;
+    left: -1px;
     background-image: url(./../../../assets/icons/mail.svg);
-  }
-  @include media-tablet {
-    &::after {
-      left: -2px;
-    }
   }
   @include media-mobile {    
     margin-left: 21px;
@@ -122,13 +117,8 @@
     width: 40px;
     height: 32px;
     top: -5px;
-    left: 0;
+    left: -1px;
     background-image: url(./../../../assets/icons/phone.svg);
-  }
-  @include media-tablet {
-    &::after {
-      left: -2px;
-    }
   }
   @include media-mobile {    
     margin-left: 27px;
@@ -180,7 +170,7 @@
   @include media-mobile {
     padding-left: 37px;
     &::after {
-      top: 6px;
+      top: 7px;
       left: -4px;
     }
   }
@@ -207,8 +197,8 @@
   }
   @include media-mobile {
     padding-left: 38px;
-    &::after { 
-      top: -5px;
+    &::after {
+      top: -4px;
     left: -4px;
     }
   }

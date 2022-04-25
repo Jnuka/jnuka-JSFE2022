@@ -8,8 +8,27 @@
     padding: 0 30px; 
   } 
   @include media-mobile {
-    max-width: 400px;
+    max-width: 767px;
     margin: auto;  
     padding: 0 10px; 
   }
+}
+
+.header__background {
+  display: none;
+  @include media-mobile {   
+    display: block;
+    position: fixed;
+    overflow: auto;   
+    width: 767px;
+    height: 100%;  
+    top: 0;
+    right: 300%;
+    z-index: 1;
+    background-color: rgba($color-text-button, .60);
+  }
+}
+
+.header__background-active {
+  right: 0;
 }

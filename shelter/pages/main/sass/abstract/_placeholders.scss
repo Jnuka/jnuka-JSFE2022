@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family:'Georgia-bold';
+  src: url('../../../assets/fonts/georgia/georgia-bold.woff2') format('woff2'),
+	url('../../../assets/fonts/georgia/georgia-bold.woff') format('woff');
+}
+
+@font-face {
   font-family:'Arial-ex';
   src: url('../../../assets/fonts/arial/arial-regular.woff') format('woff2'),
 	url('../../../assets/fonts/arial/arial-regular.woff2') format('woff');
@@ -12,4 +18,10 @@
 
 %transition {
   transition: all .3s ease-out;
+}
+
+@keyframes modal-active {  
+  0% {top: -200%;}
+  50% {top: 5%;}
+  100% {top: 0;}  
 }

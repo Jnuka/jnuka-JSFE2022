@@ -13,8 +13,19 @@ body {
   letter-spacing: 0.06px;  
   cursor: url(../../../assets/icons/pointer/pointer.png), url(../../../assets/icons/pointer/pointer.cur), default;
   a{
-    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover.cur), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../assets/icons/pointer/pointer-hover.cur), default;
   }
+  .modal__close-button,
+  .overlay {
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.cur), default;
+  }
+  .modal__wrapper {
+    cursor: url(../../../assets/icons/pointer/pointer.png), url(../../../assets/icons/pointer/pointer.cur), default;
+  }
+}
+
+.body__no-scroll {
+  overflow: hidden;
 }
 
 .header {
@@ -22,7 +33,7 @@ body {
   a::before,
   h1,
   p {
-    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover.png), url(../../../assets/icons/pointer/pointer-hover-white.png), default;
   }
 }
 
@@ -31,7 +42,7 @@ body {
   .card,
   .paginator__button,
   button  {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.png), default;
   }
   .paginator__button-disabled,
   .paginator__button-activ {
@@ -43,7 +54,7 @@ footer {
   cursor: url(../../../assets/icons/pointer/pointer-white.png), url(../../../assets/icons/pointer/pointer-white.cur), default;
   a,
   .footer__boston {
-    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../ssets/icons/pointer/pointer-hover-white.png), default;
+    cursor: url(../../../assets/icons/pointer/pointer-hover-white.png), url(../../../assets/icons/pointer/pointer-hover-white.png), default;
   }
 }
 
@@ -76,16 +87,14 @@ button {
   font-family: 'Georgia-ex';
 }
 
-.header,
-.not-only,
+
 .footer {
   @include color-selection($color: $color-selection-dark);
-  
 }
 
-.about, 
-.help,
+.header,
 .our,
-.donation {
+.modal__content,
+.navigation {
   @include color-selection($color: $color-selection-light);
 }
