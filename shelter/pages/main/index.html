@@ -22,35 +22,46 @@
             Shelter for pets in Boston
           </p>
         </div>
-        <nav class="header__navigation">
-          <ul class="navigation">
-            <li class="navigation__item navigation__item-activ">
-              <a class="navigation__link" href="#about-id">
-                About the shelter
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./../pets/index.html">
-                Our pets
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#help-id">
-                Help the shelter
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#contact-id">
-                Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <span class="header__hamburger">
+        <div class="header__content">
+          <div class="header__logo">
+            <h1 class="logo">
+              Cozy House
+            </h1>
+            <p class="logo-subtitle">
+              Shelter for pets in Boston
+            </p>
+          </div>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__item navigation__item-activ">
+                <a class="navigation__link" href="#!">
+                  About the shelter
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./../pets/index.html">
+                  Our pets
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#help-id">
+                  Help the shelter
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#contact-id">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__hamburger">
           <span class="header__hamburger-line"></span>
           <span class="header__hamburger-line"></span>
           <span class="header__hamburger-line"></span>
-        </span>
+        </div>
+        <div class="header__background"></div>
       </div>
     </header>
 
@@ -75,7 +86,7 @@
     </section>
   </div>
   <main>
-    <section class="about" id="about-id">
+    <section class="about">
       <div class="wrapper about__wrapper">
         <img class="about__pets" src="./../../assets/images/about-pets.png" alt="Pets">
         <div class="about__content">
@@ -106,39 +117,43 @@
           Our friends who<br> are looking for a house
         </h3>
         <div class="our__slider">
-          <button class="our__arrow our__arrow-prev">
+          <button class="our__arrow our__arrow-prev" id="button-left">
             <img class="arrow" src="./../../assets/icons/arrow.svg" alt="Arrow-prev">
           </button>
-          <div class="our__content">
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/katrine.png" alt="Katrine">
-              <h4 class="card__title">
-                Katrine
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/jennifer.png" alt="Jennifer">
-              <h4 class="card__title">
-                Jennifer
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
-            </div>
-            <div class="card">
-              <img class="card__img" src="./../../assets/images/our-friends/woody.png" alt="Woody">
-              <h4 class="card__title">
-                Woody
-              </h4>
-              <button class="card__button">
-                Learn more
-              </button>
+          <div class="our__content-wrapper">
+            <div class="our__background">
+              <div class="our__content" id="our__content">
+                <div class="card">
+                  <img class="card__img" src="./../../assets/images/our-friends/katrine.png" alt="Katrine">
+                  <h4 class="card__title">
+                    Katrine
+                  </h4>
+                  <button class="card__button">
+                    Learn more
+                  </button>
+                </div>
+                <div class="card">
+                  <img class="card__img" src="./../../assets/images/our-friends/jennifer.png" alt="Jennifer">
+                  <h4 class="card__title">
+                    Jennifer
+                  </h4>
+                  <button class="card__button">
+                    Learn more
+                  </button>
+                </div>
+                <div class="card">
+                  <img class="card__img" src="./../../assets/images/our-friends/woody.png" alt="Woody">
+                  <h4 class="card__title">
+                    Woody
+                  </h4>
+                  <button class="card__button">
+                    Learn more
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <button class="our__arrow our__arrow-next">
+          <button class="our__arrow our__arrow-next" id="button-right">
             <img class="arrow" src="./../../assets/icons/arrow.svg" alt="Arrow-next">
           </button>
         </div>
@@ -259,6 +274,8 @@
       </div>
     </div>
   </footer>
+
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>

@@ -2,9 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-family: 'Arial-ex';
+  font-family: 'Arial-ex';  
+  @extend %transition;
   @include media-mobile {
-    display: none;
+    @include font($size: 3.2rem, $height: 5.12rem);
+    justify-content: center;
+    text-align: center;
+    z-index: 10;  
+    .navigation__item {
+      margin-bottom: 41px;
+      &:first-child {
+        margin-bottom: 43px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 39px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -14,8 +30,10 @@
   &:last-child {
     padding-right: 0;
   }
+  @include media-mobile {
+    padding-right: 0
+  }
 }
-
 
 .navigation__link {
   text-decoration: none;
@@ -40,5 +58,12 @@
     width: 58px;
     height: 3px;
     background-color: $color-primary;
+  }
+  @include media-mobile {
+    &::before {
+      left: 0px;
+      top: 50px;
+      width: 125px;
+    }
   }
 }

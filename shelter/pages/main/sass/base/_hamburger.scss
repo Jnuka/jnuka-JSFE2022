@@ -3,17 +3,53 @@
   position: relative;
   width: 30px;
   height: 22px;
+  @extend %transition;
   @include media-mobile {
     display: flex;
     flex-direction: column;
     gap: 8px 0;
-    margin-top: 3px;
+    margin-top: 3px;    
     cursor: pointer;
-  }
+  }  
 }
 
+.header__inner {  
+  display: none;
+  @include media-mobile {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }  
+}
+
+.header__logo-active {
+  display: block;
+  z-index: 30;
+}
+
+.header__hamburger-active {  
+  
+  z-index: 30;
+  transform: rotate(-270deg);
+  
+}
 .header__hamburger-line {
   width: 100%;
   background-color: $color-primary;
   border: 1px solid $color-primary;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-active {
+  display: block;  
+  width: 100%;
+  z-index: 30;
+}
+
+.header__burger {
+  display: flex;
+  align-items: center;
 }
