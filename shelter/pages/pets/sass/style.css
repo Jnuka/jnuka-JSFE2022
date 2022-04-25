@@ -403,6 +403,12 @@ button {
   z-index: 10;
 }
 
+@media (max-width: 767px) {
+  .header__wrapper {
+    padding-right: 53px;
+  }
+}
+
 .logo {
   font-size: 3.2rem;
   line-height: 3.52rem;
@@ -670,7 +676,7 @@ button {
   width: 40px;
   height: 26px;
   top: -2px;
-  left: -1px;
+  left: 0;
   background-image: url(./../../../assets/icons/mail.svg);
 }
 
@@ -694,7 +700,7 @@ button {
   width: 40px;
   height: 32px;
   top: -5px;
-  left: -1px;
+  left: 0;
   background-image: url(./../../../assets/icons/phone.svg);
 }
 
