@@ -8,7 +8,7 @@ function isRightMove(animationName) {
 
 // Найти размер отображаемых элементов на карусели
 function resolveViwedCaroselSize() {
-  const screenWidth = window.screen.width;
+  const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) return 3;
   if (screenWidth >= 768) return 2;
   return 1;

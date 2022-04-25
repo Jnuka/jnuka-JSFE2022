@@ -41,15 +41,30 @@
   width: 1200px;
   height: 899px;
   margin-bottom: 60px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 1200px;
+    height: 899px;
+    position: absolute;
+  }
   @include media-tablet{
     width: 708px;
     height: 1403px;
     margin-bottom: 39px;
+    &::before {      
+      width: 708px;
+      height: 1403px;
+    }
   }
   @include media-mobile {
     width: 255px;
     height: 1364px;
     margin-bottom: 39px;
+    &::before {      
+      width: 300px;
+      height: 1364px;
+    }
   }
 }
 

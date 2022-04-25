@@ -2,7 +2,7 @@ import { convertJsonEntitiesToPets, shuffleArray,  } from "../../main/js/utils.j
 import { petsJson } from "../../main/js/json.pets.js";
 
 function resolvePaginationSize() {
-  const screenWidth = window.screen.width;
+  const screenWidth = window.innerWidth;
   if (screenWidth >= 1280) return 8;
   if (screenWidth >= 768) return 6;
   return 3;
